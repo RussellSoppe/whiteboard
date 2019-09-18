@@ -1,0 +1,156 @@
+:root{
+
+  /*Colors*/
+  --color-primary: #002D40;
+  --color-secondary: #8BD19C;
+
+  --link: blue;
+  --link-hover: grey;
+  --link-visited: red;
+
+  /*https://fonts.google.com/specimen/Cute+Font*/
+  --main-font: 'Cute Font', cursive;
+  /*https://fonts.google.com/specimen/Roboto?selection.family=Roboto*/
+  --secondary-font: 'Roboto', sans-serif;;
+
+}
+
+
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:hover, a:focus, a:active {
+  color: var(--link-hover);
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--main-font);
+}
+
+p{
+  font-family: var(--secondary-font);
+}
+
+
+
+
+
+.item-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*Options for animation could include: */
+
+/*
+
+Animating relative position changes 
+
+*/
+
+.item{
+  position: relative;
+
+  -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadein{
+  from{
+    opacity: .4;
+    left: 200px;
+  }
+  to{
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fadein{
+  from{
+    opacity: .4;
+    left: 200px;
+  }
+  to{
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+
+/*
+
+Margin Changes
+
+*/
+
+.item{
+  -webkit-animation-name: fadein; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadein{
+  from{
+    opacity: .4;
+    margin-left: 200px;
+  }
+  to{
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+@keyframes fadein{
+  from{
+    opacity: .4;
+    margin-left: 200px;
+  }
+  to{
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+
+/*
+
+Using trasition changes with relative position, 
+change from JS to create left or right movement depending on selection
+
+*/
+
+/*Classes to add depending on previous or next, will also need to add a change in the position*/
+.item-left{
+  position: relative;
+  left: 200;
+
+  transition: left 1s;
+}
+
+.item-right{
+  position: relative;
+  right: 200;
+
+  transition: left 1s;
+}

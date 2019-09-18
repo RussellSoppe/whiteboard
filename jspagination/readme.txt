@@ -1,0 +1,1 @@
+This whiteboard element is a basic js pagination element. Using JavaScript I am creating pagination for desired elements.
