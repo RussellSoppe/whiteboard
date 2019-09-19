@@ -1,0 +1,125 @@
+:root{
+
+    /*Colors*/
+    --color-primary: #002D40;
+    --color-secondary: #8BD19C;
+
+    --link: blue;
+    --link-hover: grey;
+    --link-visited: red;
+
+    /*https://fonts.google.com/specimen/Cute+Font*/
+    --main-font: 'Cute Font', cursive;
+    /*https://fonts.google.com/specimen/Roboto?selection.family=Roboto*/
+    --secondary-font: 'Roboto', sans-serif;;
+}
+
+
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover, a:focus, a:active {
+    color: var(--link-hover);
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--main-font);
+}
+
+p{
+    font-family: var(--secondary-font);
+}
+
+/*Element Style*/
+
+#main-nav-1   {
+    height: 30px; /* set to the height you want your menu to be */
+    margin: 0 0 10px; /* just to give some spacing */
+}
+#main-nav-1 ul    {
+    margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+    display: flex;
+    flex-direction: row;
+}
+
+#main-nav-1 li    {
+    display: block;
+    line-height: 30px; /* this should be the same as your #main-nav-1 height */
+    height: 30px; /* this should be the same as your #main-nav-1 height */
+    margin: 0; padding: 0; /* only needed if you don't have a reset */
+    position: relative; /* this is needed in order to position sub menus */
+}
+#main-nav-1 li a  {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+#main-nav-1 .current-menu-item a, 
+#main-nav-1 .current_page_item a, 
+#main-nav-1 a:hover {
+    color: #000;
+    background: #ccc;
+}
+
+
+
+/* this targets all sub menus */
+#main-nav-1 ul ul { 
+    display: none; /* hide all sub menus from view */
+    position: absolute;
+    top: 30px; /* this should be the same height as the top level menu -- height + padding + borders */
+}
+
+/* this targets all submenu items */
+#main-nav-1 ul ul li { 
+    width: 150px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+}
+
+/* target all sub menu item links */
+#main-nav-1 ul ul li a { 
+    padding: 5px 10px; /* give our sub menu links a nice button feel */
+}
+
+/* show sub menus when hovering over a parent */
+#main-nav-1 ul li:hover > ul {
+    display: block; 
+}
+
+
+/* target all second, third, and deeper level sub menus */
+#main-nav-1 ul ul li ul{
+    left: 150px; /* set to the width above, could also do percentages for both to have better responsiveness*/
+    top: 0px; /* this sets the sub menu to start at position with its parent item */
+}
+
+/* set left and top above for the desired effect*/
+
+/*
+    Options:
+
+        Display submenu to side of li selected, 
+ 
+            left: 150px; set to the width above, could also do percentages for both to have better responsiveness
+            top: 0px; this sets the sub menu to start at position with its parent item 
+        
+        Display below, slightly adjusted to right - this option will only allow nested items at end of list to display well
+
+            left: 15px; /* this needs to match the sub menu width set above -- width + padding + borders
+            top: 30px; /* this ensures the sub menu starts in line with its parent item
+
+*/

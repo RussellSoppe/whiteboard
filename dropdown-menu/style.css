@@ -1,0 +1,46 @@
+:root{
+
+    /*Colors*/
+    --color-primary: #002D40;
+    --color-secondary: #8BD19C;
+
+    --link: blue;
+    --link-hover: grey;
+    --link-visited: red;
+
+    /*https://fonts.google.com/specimen/Cute+Font*/
+    --main-font: 'Cute Font', cursive;
+    /*https://fonts.google.com/specimen/Roboto?selection.family=Roboto*/
+    --secondary-font: 'Roboto', sans-serif;;
+}
+
+
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover, a:focus, a:active {
+    color: var(--link-hover);
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--main-font);
+}
+
+p{
+    font-family: var(--secondary-font);
+}
+
