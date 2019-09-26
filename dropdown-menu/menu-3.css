@@ -1,0 +1,116 @@
+:root{
+
+    /*Colors*/
+    --color-primary: #002D40;
+    --color-secondary: #8BD19C;
+
+    --link: blue;
+    --link-hover: grey;
+    --link-visited: red;
+
+    /*https://fonts.google.com/specimen/Cute+Font*/
+    --main-font: 'Cute Font', cursive;
+    /*https://fonts.google.com/specimen/Roboto?selection.family=Roboto*/
+    --secondary-font: 'Roboto', sans-serif;;
+}
+
+
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover, a:focus, a:active {
+    color: var(--link-hover);
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--main-font);
+}
+
+p{
+    font-family: var(--secondary-font);
+}
+
+/*Element Style*/
+
+#main-nav-3   {
+    position: relative;
+    height: 30px; /* set to the height you want your menu to be */
+    margin: 0 0 10px; /* just to give some spacing */
+}
+
+#main-nav-3 ul    {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-nav-3 li    {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+
+    /* line-height: 30px; this should be the same as your #main-nav-1 height */
+    /* height: 30px; this should be the same as your #main-nav-1 height */
+}
+
+/*Style each item*/
+#main-nav-3 li a  {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+/*Style each item when hovered*/
+#main-nav-3 .current-menu-item a, 
+#main-nav-3 .current_page_item a, 
+#main-nav-3 a:hover {
+    color: #000;
+    background: #ccc;
+}
+
+
+
+/* this targets all sub menus */
+#main-nav-3 ul ul { 
+    display: none;
+}
+
+/* this targets all submenu items */
+#main-nav-3 ul ul li { 
+    position: relative;
+    /*left: 30px;*/
+
+}
+
+/* target all sub menu item links */
+#main-nav-3 ul ul li a { 
+   
+}
+
+/* show sub menus when hovering over a parent */
+#main-nav-3 ul li:hover > ul {
+    display: block;
+}
+
+
+/* target all second, third, and deeper level sub menus */
+#main-nav-3 ul ul li ul{
+   
+}
