@@ -1,0 +1,269 @@
+:root{
+
+	/*Colors*/
+	--color-primary: #002D40;
+	--color-secondary: #8BD19C;
+
+	--link: blue;
+	--link-hover: grey;
+	--link-visited: red;
+
+	/*https://fonts.google.com/specimen/Cute+Font*/
+	--main-font: 'Cute Font', cursive;
+	/*https://fonts.google.com/specimen/Roboto?selection.family=Roboto*/
+	--secondary-font: 'Roboto', sans-serif;;
+
+}
+
+
+
+a {
+	color: var(--link);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
+
+a:hover, a:focus, a:active {
+	color: var(--link-hover);
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--main-font);
+}
+
+p{
+	font-family: var(--secondary-font);
+}
+
+
+
+
+
+/*Rotating Button*/
+
+/*.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 50%;
+  margin: 30px;
+  animation: rotate 1s infinite linear;
+}
+.circle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  margin: -30% 0 0 -30%;
+}
+@keyframes rotate {
+  0%    { transform: rotate(0deg);  }
+  100%  { transform: rotate(360deg);  }
+}*/
+
+.spincontainer{
+	position: relative;
+	height: 175px;
+	width: 175px;
+	background: #179B91; /*color-secondary-2-0*/
+}
+
+#c1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+#c2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+#c3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+#c4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.loader {
+  font-size: 1.5em;
+  color: #2752A8; /*primary-0*/
+  position: relative;
+  padding: 3px;
+  /* make a square */
+  height: 150px;
+  width: 150px;
+  /* center content*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: coloranim infinite 5s;
+}
+
+.loaderb {
+  font-size: 1.5em;
+  color: #446AB5; /*primary-2*/
+  position: relative;
+  padding: 3px;
+  /* make a square */
+  height: 130px;
+  width: 130px;
+  /* center content*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: coloranim infinite 5s;
+}
+
+.loaderc {
+  font-size: 1.5em;
+  color: #698ACA; /*primary-1*/
+  position: relative;
+  padding: 3px;
+  /* make a square */
+  height: 100px;
+  width: 100px;
+  /* center content*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: coloranim infinite 5s;
+}
+
+.loaderd {
+  font-size: 1.5em;
+  color: #698ACA; /*primary-1*/
+  position: relative;
+  padding: 3px;
+  /* make a square */
+  height: 90px;
+  width: 90px;
+  /* center content*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: coloranim infinite 5s;
+}
+
+.circle {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.loader:after,
+.loaderb:after,
+.loaderc:after,
+.loaderd:after {
+  border-radius: inherit;
+  color: inherit;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  background: linear-gradient(white, white), linear-gradient(0deg, transparent 40%, currentcolor 60%), linear-gradient(50deg, transparent 50%, currentcolor 52%);
+  /*background: rgba(255, 255, 255, .5);*/
+  background-clip: content-box, content-box, border-box, border-box;
+  z-index: -1;
+  mix-blend-mode: multiply;/* if avalaible, else bg remains white */
+}
+
+.loaderc:after{
+	background-clip: content-box, content-box, border-box, border-box;
+	transform: rotate(180deg);
+}
+
+
+.spina:after{
+  animation: spina 5s linear infinite;
+}
+
+.spinsa:after{
+  animation: spinsa 8s linear infinite;
+}
+
+.spinb:after {
+  animation: spinb 4s linear infinite;
+}
+
+.spinsb:after {
+  animation: spinsb 10s linear infinite;
+}
+
+@keyframes spina {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinsa {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes spinb {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes spinsb {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+@keyframes coloranim {
+  20% {
+    color: tomato;
+  }
+  40% {
+    color: purple;
+  }
+  60% {
+    color: turquoise;
+  }
+  80% {
+    color: green;
+  }
+}
