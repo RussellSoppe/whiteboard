@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55.022984mm"
+   height="53.419365mm"
+   viewBox="0 0 55.022984 53.419365"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="bottomRightCircle.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7347">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop7343" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop7345" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6143"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6141" />
+    </linearGradient>
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient6193"
+       gradientUnits="userSpaceOnUse"
+       x="72.663933"
+       y="108.8413"
+       gradientTransform="translate(78.327243,136.12101)">
+      <meshrow
+         id="meshrow6195">
+        <meshpatch
+           id="meshpatch6197">
+          <stop
+             path="c 10.6463,-10.3331  27.9073,-10.3331  38.5536,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop6199" />
+          <stop
+             path="c 10.6463,10.3331  10.6463,27.0865  0,37.4196"
+             style="stop-color:#800080;stop-opacity:1"
+             id="stop6201" />
+          <stop
+             path="c -10.6463,10.3331  -27.9073,10.3331  -38.5536,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop6203" />
+          <stop
+             path="c -10.6463,-10.3331  -10.6463,-27.0865  -1.42109e-14,-37.4196"
+             style="stop-color:#800080;stop-opacity:1"
+             id="stop6205" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7347"
+       id="linearGradient7353"
+       x1="132.06567"
+       y1="170.02971"
+       x2="126.68575"
+       y2="163.61523"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="rotate(-170.01293,4.1761298e-6,-6.5958151e-6)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="171.94065"
+     inkscape:cy="-162.45517"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline"
+     transform="translate(-78.327238,-136.12101)">
+    <ellipse
+       style="display:inline;fill:none;fill-opacity:1;stroke:url(#meshgradient6193);stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="path4630"
+       cx="106.37326"
+       cy="162.83069"
+       rx="27.261492"
+       ry="26.459682" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient7353);stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="path7313"
+       cx="-76.666489"
+       cy="-179.63319"
+       rx="19.777945"
+       ry="19.510675"
+       transform="rotate(170.01293)" />
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+
+.button-row{
+	display:flex;
+}
+
+.svg-container-div{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	margin: 8px;
+	/*border: solid pink 5px;*/
+}
+
+.svg-container-div:hover{
+	transform: scale(1.1);
+}
+
+.svg-container-div:hover > a > .svg-wrapper > .svg-1{
+	animation: svg-spin 3s linear infinite;
+	width: 100%;
+	height: 100%;
+}
+
+.svg-container-div:hover > a > .svg-wrapper > .svg-2{
+	animation: svg-spinreverse 3s linear infinite;
+	width: 90%;
+	height: 90%;
+}
+
+.svg-container-div:hover > a > .svg-wrapper > .svg-3{
+	animation: svg-spin 3s linear infinite;
+	width: 80%;
+	height: 80%;
+}
+
+.svg-container-div:hover > a > .svg-wrapper > .svg-4{
+	animation: svg-spinreverse 3s linear infinite;
+	width: 65%;
+	height: 65%;
+}
+
+.svg-container-div:hover > a > .svg-wrapper > .svg-5{
+	animation: svg-spin 3s linear infinite;
+	width: 60%;
+	height: 60%;
+}
+
+.svg-wrapper{
+	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	/*border: solid red 3px;*/
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.svg-1,
+.svg-2,
+.svg-3,
+.svg-4,
+.svg-5{
+	width: 60%;
+	height: 60%;
+	transition: width .25s,  height .25s;
+}
+
+
+@keyframes svg-spin {
+	from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes svg-spinreverse {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

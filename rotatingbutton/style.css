@@ -74,45 +74,35 @@ p{
   0%    { transform: rotate(0deg);  }
   100%  { transform: rotate(360deg);  }
 }*/
+.spinners-container{
+  display: flex;
+  flex-direction: row;
+}
 
 .spincontainer{
 	position: relative;
-	height: 175px;
-	width: 175px;
-	background: #179B91; /*color-secondary-2-0*/
+	height: 30px;
+	width: 30px;
+  margin: 15px;
+	/*background: #179B91; color-secondary-2-0*/
 }
 
-#c1{
+.spincontainer:hover{
+  transform: scale(1.2);
+}
+
+#c1,
+#c2, 
+#c3, 
+#c4, 
+#c5{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 }
 
-#c2{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-}
 
-#c3{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-}
-
-#c4{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-}
 .center{
 	position: absolute;
 	top: 50%;
@@ -126,8 +116,8 @@ p{
   position: relative;
   padding: 3px;
   /* make a square */
-  height: 150px;
-  width: 150px;
+  height: 95%;
+  width: 95%;
   /* center content*/
   display: flex;
   align-items: center;
@@ -141,8 +131,8 @@ p{
   position: relative;
   padding: 3px;
   /* make a square */
-  height: 130px;
-  width: 130px;
+  height: 85%;
+  width: 85%;
   /* center content*/
   display: flex;
   align-items: center;
@@ -156,8 +146,8 @@ p{
   position: relative;
   padding: 3px;
   /* make a square */
-  height: 100px;
-  width: 100px;
+  height: 60%;
+  width: 60%;
   /* center content*/
   display: flex;
   align-items: center;
@@ -171,8 +161,8 @@ p{
   position: relative;
   padding: 3px;
   /* make a square */
-  height: 90px;
-  width: 90px;
+  height: 55%;
+  width: 55%;
   /* center content*/
   display: flex;
   align-items: center;
@@ -205,10 +195,10 @@ p{
   mix-blend-mode: multiply;/* if avalaible, else bg remains white */
 }
 
-.loaderc:after{
+/*.loaderc:after{
 	background-clip: content-box, content-box, border-box, border-box;
 	transform: rotate(180deg);
-}
+}*/
 
 
 .spina:after{
@@ -266,4 +256,79 @@ p{
   80% {
     color: green;
   }
+}
+
+.svg-container{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: solid red;
+}
+
+#svg1,
+#svg2,
+#svg3,
+#svg4,
+#svg5{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*border: solid pink;*/
+}
+
+.fifty{
+  width: 50%;
+  height: 50%;
+}
+.eighty{
+  width: 80%;
+  height: 80%;
+}
+
+
+.contain{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*linear*/
+.svg-spinA{
+  animation: svgspina 5s linear infinite;
+}
+
+@keyframes svgspina {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Center*/
+#bottomleft1-4,
+#bottomright1-4{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#bottomleft1-4{
+  transform: rotate(90deg);
+}
+
+#bottomleft1-4:hover{
+  transform: rotate(180deg);
+  transition: 2s;
+}
+
+#bottomleft1-4,
+#bottomright1-4{
+}
+
+#bottomright1-4:hover{
+  transform: rotate(270deg);
+  transition: 2s;
 }
